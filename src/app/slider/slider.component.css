@@ -1,0 +1,43 @@
+body
+{
+  background: white;
+}
+.container
+{
+  width: 1170px;
+  margin: auto;
+}
+.clear
+{clear:both;}
+/*Start Header*/
+
+
+.header .slider
+{
+  height: 600px;
+  background-image: url("../../thumb.jpg");
+  background-size: cover;/*css3*/
+}
+.header .slider .info{ text-align: center; padding-top: 200px;}
+
+.header .slider .info h2{
+  color:white;
+  width: 600px;
+  margin:auto;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:36px;
+  padding: 6px;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+}
+.header .slider .info button
+{
+  margin: 20px;
+  background: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 13px;
+}

@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing-module';
 import { SliderComponent } from './slider/slider.component';
+import { NavigatorComponent } from './navigator/navigator.component';
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
+    NavigatorComponent,
   ],
   imports: [
     BrowserModule,

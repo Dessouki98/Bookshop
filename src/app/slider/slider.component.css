@@ -14,7 +14,8 @@ body
 
 .header .slider
 {
-  height: 600px;
+  margin: 0px;
+  height: 853px;
   background-image: url("../../thumb.jpg");
   background-size: cover;/*css3*/
 }

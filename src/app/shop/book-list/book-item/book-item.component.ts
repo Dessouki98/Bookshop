@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {BookModel} from '../../book.model';
+import {ShopService} from '../../shop.service';
 
 @Component({
   selector: 'app-book-item',
@@ -8,9 +9,12 @@ import {BookModel} from '../../book.model';
 })
 export class BookItemComponent implements OnInit {
   @Input() selectedBook: BookModel;
-  constructor() { }
+  constructor(public shopService: ShopService) { }
 
   ngOnInit(): void {
   }
 
+  addBook(booktoAdd: BookModel) {
+    this.shopService.addBook(booktoAdd);
+  }
 }

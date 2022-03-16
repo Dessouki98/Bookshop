@@ -2,9 +2,9 @@
 class="list-group-item clearfix">
   <div class="pull-left">
     <div class="list-group-item-heading" style="font-size: 20Px; font-weight: bold;margin-bottom: -3px">{{selectedBook.name}}</div>
-    <div class="list-group-item-text" style="font-family: Algerian">{{selectedBook.author}}</div>
-    <div class="list-group-item-text" style="margin-bottom: 10px">{{selectedBook.discreption}}.</div>
-    <button class="btn btn-success">Add to Cart</button>
+    <div class="list-group-item-text" style="font-family: Algerian,serif">{{selectedBook.author}}</div>
+    <div class="list-group-item-text" style="margin-bottom: 10px">{{selectedBook.discreption}}...</div>
+    <button (click)="addBook(selectedBook)" class="btn btn-success">Add to Cart</button>
   </div>
   <div class="pull-right">
     <img

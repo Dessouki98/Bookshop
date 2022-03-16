@@ -1,1 +1,19 @@
-<p>my-cart works!</p>
+<div *ngFor="let book of books">
+  <div
+    class="list-group-item clearfix">
+    <div class="pull-left">
+      <div class="list-group-item-heading" style="font-size: 20Px; font-weight: bold;margin-bottom: -3px">{{book.name}}</div>
+      <div class="list-group-item-text" style="font-family: Algerian,serif">{{book.author}}</div>
+      <div class="list-group-item-text" style="margin-bottom: 10px">{{book.discreption}}...</div>
+      <button (click)="remove(book)" class="btn btn-danger">remove</button>
+    </div>
+    <div class="pull-right">
+      <img
+        src="{{book.imgSrc}}"
+        class="img-circle"
+        alt="{{book.name}}"
+        style="max-height: 100px"
+      >
+    </div>
+  </div>
+</div>
